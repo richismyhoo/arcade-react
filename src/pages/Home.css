@@ -1,0 +1,220 @@
+@property --pink{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ff9cee;
+}
+.home {
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: --pink 500ms ease;
+    background-color: #ffffff;
+    opacity: 0.9;
+    background-position: 0 0, 100px 100px;
+    background-size: 200px 200px;
+    background-image:  repeating-linear-gradient(45deg, var(--pink) 25%, transparent 25%, transparent 75%, var(--pink) 75%, var(--pink)), repeating-linear-gradient(45deg, var(--pink) 25%, #ffffff 25%, #ffffff 75%, var(--pink) 75%, var(--pink));
+}
+
+.home.middle {
+    --pink: rgb(195, 92, 226);
+
+}
+.home.bottom {
+    --pink: rgb(145, 183, 253);
+}
+
+
+
+.tictactoe-card {
+    width: 2500px;
+    height: 800px;
+    display: flex;
+    margin-top: 300px;
+    border-radius: 1000px;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: #FF9097;
+    transition: all 500ms ease;
+    clip-path: polygon(0% 20%,100% 0%,100% 90%,0% 100%) margin-box;
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1039%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%2332325d'%3e%3c/rect%3e%3ccircle r='52.08' cx='664.04' cy='188.74' fill='url(%26quot%3b%23SvgjsLinearGradient1040%26quot%3b)'%3e%3c/circle%3e%3ccircle r='31.77' cx='1161.98' cy='333.41' fill='url(%26quot%3b%23SvgjsLinearGradient1041%26quot%3b)'%3e%3c/circle%3e%3ccircle r='53.525' cx='586.57' cy='13.67' fill='url(%26quot%3b%23SvgjsLinearGradient1042%26quot%3b)'%3e%3c/circle%3e%3ccircle r='32.745' cx='1391.8' cy='55.06' fill='url(%26quot%3b%23SvgjsLinearGradient1043%26quot%3b)'%3e%3c/circle%3e%3ccircle r='52.475' cx='1199.6' cy='557.39' fill='url(%26quot%3b%23SvgjsLinearGradient1044%26quot%3b)'%3e%3c/circle%3e%3ccircle r='29.3' cx='994.2' cy='353.1' fill='url(%26quot%3b%23SvgjsLinearGradient1045%26quot%3b)'%3e%3c/circle%3e%3ccircle r='15.08' cx='398.61' cy='535.82' fill='url(%26quot%3b%23SvgjsLinearGradient1046%26quot%3b)'%3e%3c/circle%3e%3ccircle r='49.325' cx='836.09' cy='37.67' fill='url(%26quot%3b%23SvgjsLinearGradient1047%26quot%3b)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1039'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='559.88' y1='188.74' x2='768.2' y2='188.74' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1040'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1098.44' y1='333.41' x2='1225.52' y2='333.41' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1041'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='479.52000000000004' y1='13.670000000000002' x2='693.62' y2='13.670000000000002' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1042'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1326.31' y1='55.06' x2='1457.29' y2='55.06' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1043'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1094.6499999999999' y1='557.39' x2='1304.55' y2='557.39' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1044'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='935.6' y1='353.1' x2='1052.8' y2='353.1' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1045'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='368.45' y1='535.82' x2='428.77' y2='535.82' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1046'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='737.44' y1='37.67' x2='934.74' y2='37.67' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1047'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    }
+
+
+.tictactoe-card.middle {
+    background-color: #7B6EC1;
+}
+
+.tictactoe-card.bottom {
+    background-color: #5C77BD;
+}
+
+.tictactoe-card img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    margin-bottom: 150px;
+    margin-left: 500px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFD4D4;
+    width: 500px;
+    height: 600px;
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 500ms ease;
+    margin-bottom: 130px;
+    margin-right: 400px;
+}
+
+.card-container.middle {
+    background-color: #FF9FE5;
+}
+
+.card-container.bottom {
+    background-color: #D4D7ED;
+}
+
+.game-name {
+    font-size: 60px;
+    color: #272727;
+    background-color: #FFD4D4;
+    border-radius: 500px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 900;
+    transition: all 500ms ease;
+}
+
+.game-name.middle {
+    background-color: #FF9FE5;
+}
+
+.game-name.bottom {
+    background-color: #D4D7ED;
+}
+
+.game-description {
+    height: 200px;
+    font-size: 40px;
+    color: #272727;
+    width: 90%;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.cta {
+    display: flex;
+    padding: 11px 33px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    background: #FF9FE5;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+    height: 50px;
+    transition: background 500ms ease;
+  }
+
+.cta.middle {
+    background-color: #9578C8;
+}
+
+.cta.bottom {
+    background-color: #5C77BD;
+}
+  
+  .cta:focus {
+    outline: none;
+  }
+  
+  .cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FF9097;
+  }
+
+  .cta.middle:hover {
+    box-shadow: 10px 10px 0 #aa52b3;
+  }
+
+.cta.bottom:hover {
+    box-shadow: 10px 10px 0 #8C9DD0;
+}
+  
+  .cta .second {
+    transition: 0.5s;
+    margin-right: 0px;
+  }
+  
+  .cta:hover .second {
+    transition: 0.5s;
+    margin-right: 45px;
+  }
+  
+  .span {
+    transform: skewX(15deg);
+  }
+  
+  .second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+  .one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+  
+  .two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+  
+  .cta:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+  
+  @keyframes color_anim {
+    0% {
+      fill: #FFD4D4;
+    }
+  
+    50% {
+      fill: #9578C8;
+    }
+  
+    100% {
+      fill: #FFD4D4;
+    }
+  }
+
+
+
+
+
+
+
+
+  
